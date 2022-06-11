@@ -14,6 +14,8 @@ export const AddMovie = () => {
   const submitData = (event) => {
     event.preventDefault();
     setMovies((preData) => [...preData, { name: name, price: price }]);
+    setName("");
+    setPrice("");
   };
   return (
     <>
