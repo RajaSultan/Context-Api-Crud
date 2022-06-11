@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 
-export const movieContext = createContext([]);
+export const movieContext = createContext();
 export const MovieProvider = (props) => {
   const [movies, setMovies] = useState([
     {
