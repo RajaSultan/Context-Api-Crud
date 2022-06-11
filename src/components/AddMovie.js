@@ -22,7 +22,7 @@ export const AddMovie = () => {
     <>
       <div className="container">
         <div className="row d-flex justify-content-center">
-          <div className="col-6 mt-5 mb-5">
+          <div className="col-7 mt-5 mb-5">
             <div className="card pt-4 pb-4 px-5 shadow">
               <h3 className="text-center">FILL MOVIE FORM</h3>
               <form className="mt-md-5 mt-3" onSubmit={submitData}>

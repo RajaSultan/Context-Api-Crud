@@ -5,7 +5,7 @@ const Movie = (props) => {
     <>
       <div className="container">
         <div className="row d-flex justify-content-center">
-          <div className="col-6 mt-3 mb-5">
+          <div className="col-7 mt-3 mb-5">
             <div className="card pt-4 pb-4 px-5 shadow">
               <h3 className="text-center mb-5">MOVIES DATA</h3>
               <label htmlFor="search">
@@ -22,6 +22,7 @@ const Movie = (props) => {
                     <th scope="col">ID</th>
                     <th scope="col">Movie Name</th>
                     <th scope="col">Movie Price</th>
+                    <th scope="col">Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -30,6 +31,14 @@ const Movie = (props) => {
                       <th scope="row">{index + 1}</th>
                       <td>{ele.name}</td>
                       <td>{ele.price}</td>
+                      <td>
+                        <a href="#" className="btn btn-danger me-3">
+                          Delete
+                        </a>
+                        <a href="#" className="btn btn-primary">
+                          Edit
+                        </a>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
